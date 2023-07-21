@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: yellow;     
+    width: 100%;
+}
+.navbarDiv{
+    /* border: 5px solid red; */
+    padding: 0;
+    margin: 0;
+}
+.navbarDiv .navbar{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navbarDiv .navbar .myName{
+    /* border: 3px solid purple;  */
+    flex-basis: 50%;
+    justify-content: flex-start;
+}
+.navbarDiv .navbar .myName .navbarName{
+    padding: 0 0  0 3rem;
+    margin: 0;
+
+    font-size: 2rem;
+}
+.navbarDiv .navbar .linkList{
+    
+    /* border: 3px dashed orangered; */
+    flex-basis: 50%;
+   
+}
+.navbarDiv .navbar .linkList .linkListTitle{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    
+}
+.navbarDiv .navbar .linkList .linkListTitle li{
+    padding-top: 0.3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.5rem;
+
+}
