@@ -1,11 +1,19 @@
-body{
+*{
     padding: 0;
     margin: 0;
-    background-color: yellow;     
+    scrollbar-width: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+body{
+    padding: 0;
+    margin: 0;   
     width: 100%;
+    background-color: powderblue;
 }
 a{
     text-decoration: none;
+    color: black;
 }
 .navbarDiv{
     /* border: 5px solid red; */
@@ -13,8 +21,15 @@ a{
     position: fixed;
     padding: 0;
     margin: 0;
+    top: 0;
+    left: 0;
     transition: .3s;
     z-index: 5;
+    background-color: rgb(148, 184, 196);
+    /* background: rgb(255, 255, 255);
+    background: linear-gradient(to right bottom,rgba(255, 110, 110, 0),rgba(120, 7, 143, 0.2));
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem); */
 }
 .navbarDiv.stickyHeader{
     background-color: blue;
@@ -69,9 +84,17 @@ a{
 section{
     min-height: 100vh;
     padding-top: 2.5rem ;
-    background-color: green;
+
+    /* background: white;
+    background: linear-gradient(to right bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.2));
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    width: 80%;
+    border-radius: 1rem;
+    overflow: hidden; */
 }
 
+
 .home .welcome__info{
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
