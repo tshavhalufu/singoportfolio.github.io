@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/portfolio/style/style.css">
-    <script src="/portfolio/javascript/screenlisterner.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+
     <title>Document</title>
   </head>
   <body>
-    <div class="navbarDiv">
+    <header class="navbarDiv">
       <nav class="navbar">
         <div class="myName">
-          <h1 class="navbarName">Singo Portfolio</h1>
+          <h1 class="navbarName"> <a href="#">Singo Portfolio</a></h1>
         </div>
 
         <div class="linkList">
           <ul class="linkListTitle">
-            <li class="active" id="home">Home</li>
-            <li id="about">About</li>
-            <li id="history">History</li>
-            <li id="game">Game</li>
+            <li><a href="#home" id="home" class="active">Home</a></li>
+            <li><a href="#about" id="about">About</a></li>
+            <li><a href="#history" id="history">History</a></li>
+            <li><a href="#game" id="game">Game</a></li>
           </ul>
         </div>
       </nav>
-    </div>
+    </header>
 
     <!-- This is the display for home -->
-    <section class="home">
+    <section class="home" id="home">
       <div class="welcome__info">
         <h1>SINGO TSHAVHALUFU</h1>
         <p>Welcome to my Portfolio page</p>
@@ -34,7 +34,7 @@
     </section>
 
     <!-- This is the display for about -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="welcome__info">
         <h1>SINGO TSHAVHALUFU</h1>
         <p>Welcome to my Portfolio page</p>
@@ -42,21 +42,21 @@
     </section>
 
     <!-- This is the display for history -->
-    <section class="history">
-        <div class="welcome__info">
-          <h1>SINGO TSHAVHALUFU</h1>
-          <p>Welcome to my Portfolio page</p>
-        </div>
-      </section>
+    <section class="history" id="history">
+      <div class="welcome__info">
+        <h1>SINGO TSHAVHALUFU</h1>
+        <p>Welcome to my Portfolio page</p>
+      </div>
+    </section>
 
-      <!-- This is the display for game -->
-    <section class="game">
-        <div class="welcome__info">
-          <h1>SINGO TSHAVHALUFU</h1>
-          <p>Welcome to my Portfolio page</p>
-        </div>
-      </section>
+    <!-- This is the display for game -->
+    <section class="game" id="game">
+      <div class="welcome__info">
+        <h1>SINGO TSHAVHALUFU</h1>
+        <p>Welcome to my Portfolio page</p>
+      </div>
+    </section>
 
-      
+    <script src="/javascript/screenlisterner.js"></script>
   </body>
 </html>
