@@ -7,9 +7,6 @@ window.onscroll = () =>{
         let offset = section.offsetTop - 100;
         let height = section.offsetHeight;
         let id = section.getAttribute('id');
-        
-        let dif = offset+ height;
-        //console.log("top "+top +" offset +  height "+ dif + " id " +id);
 
         if(top >= offset && top < offset + height){
             navbarLinks.forEach((link) =>{
