@@ -1,181 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/style.css" />
 
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="navbarDiv">
-      <nav class="navbar">
-        <div class="myName">
-          <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style/style.css" />
+
+  <title>Singo Tshalufu Portfolio</title>
+</head>
+
+<body>
+  <header class="navbarDiv">
+    <nav class="navbar">
+      <div class="myName">
+        <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
+      </div>
+
+      <div class="linkList">
+        <ul class="linkListTitle">
+          <li><a href="#home" id="homeLink" class="active">Home</a></li>
+          <li><a href="#about" id="aboutLink">About</a></li>
+          <li><a href="#history" id="historyLink">History</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="mobileNavbar">
+      <div class="myName">
+        <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
+      </div>
+
+      <div class="handburger_menu">
+        <div class="handburger__icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
-        <div class="linkList">
-          <ul class="linkListTitle">
-            <li><a href="#home" id="homeLink" class="active">Home</a></li>
-            <li><a href="#about" id="aboutLink">About</a></li>
-            <li><a href="#history" id="historyLink">History</a></li>
-            <li><a href="#contact" id="contactLink">Contact</a></li>
-            <li><a href="#game" id="gameLink">Game</a></li>
+        <div class="menu__list">
+          <ul class="linkListTitle__menu">
+            <li><a href="#home" id="homeLink" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" id="aboutLink" onclick="toggleMenu()">About</a></li>
+            <li><a href="#history" id="historyLink" onclick="toggleMenu()">History</a></li>
           </ul>
         </div>
-      </nav>
-    </header>
-    +
 
-    <!-- This is the display for home -->
-    <section class="home" id="home">
-      <div class="welcome__info">
-        <h1>Hi I am SINGO TSHAVHALUFU</h1>
+      </div>
+    </nav>
+  </header>
+
+  <!-- This is the display for home -->
+  <section class="home" id="home">
+    <div class="image_view">
+      <img src="/asseerts/singo_tshavhalufu_pic.jpg" alt="Singo Tshalufu image" class="main_pic" loading="lazy">
+    </div>
+    <div class="welcome__info">
+      <h1>Hello I am</h1>
+      <h2 class="name">SINGO TSHAVHALUFU</h2>
+      <p>
+        Software Developer<br />
+      </p>
+      <div class="media_buttons">
+
+        <button class="download_cv" onclick="window.open('/asseerts/singo_tshavhalufu_resume.pdf')"
+          aria-label="download singo tshavhalufu cv">Download CV</button>
+
+        <a href="https://linkedin.com/in/tshavhalufu-singo-154538179">
+          <img src="/asseerts/linkedin_svg.svg" alt="linkedin logo" class="social_media">
+        </a>
+
+        <a href="https://github.com/tshavhalufu?tab=repositories">
+          <img src="/asseerts/github_svg.svg" alt="github logo" class="social_media">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the display for about -->
+  <section class="about" id="about">
+    <div class="about__info">
+      <!-- section to explain why I am in this career path -->
+      <div class="career__motivatio">
+        <h2>What motivated my career?</h2>
         <p>
-          Welcome to my Portfolio page<br />
-          I am a full stack developer<br />
-          willing to learn more and new technologies to imProve my skils
+          From an early age, my exposure to computers ignited a profound curiosity about their inner workings.<br>
+          This interest grew while I was studying Computer Science at University of Witwatersrand,<br> where I
+          discovered a keen interest in the realms of software design and programming.<br>
+          Upon graduating, I eagerly embraced the chance to join the Wits Graduate Internship Programme,<br>
+          a pivotal step towards further honing my skills and evolving into a seasoned software developer.<br>
+          My enthusiasm lies in harnessing technology to tackle intricate challenges and bring forth efficient,
+          innovative solutions.<br>
+          Besides working with code, I find joy in the rhythm of jogging and the creative process of composing music in
+          my free time.
         </p>
       </div>
-    </section>
+    </div>
 
-    <!-- This is the display for about -->
-    <section class="about" id="about">
-      <div class="about__info">
-        <!-- section to explain why I am in this career path -->
-        <div class="career__motivatio">
-          <h2>What motivated my career?</h2>
-          <p>
-            From a young age, I had access to computers <br />
-            my curiosity grew on their inner workings.<br />When doing Computer
-            Science, I found myself interested in software design and
-            programming.<br />After graduating I grasped the opportunity to be
-            part of the Wits Graduate Internship Programme<br />
-            to continue to grow my skills and become a professional.<br />
-            In my spare time, I enjoy jogging and composing music
-          </p>
-        </div>
-      </div>
+    <!-- listing all my skill set -->
+    <div class="skills">
+      <h2 class="title">My skill set</h2>
 
-      <!-- listing all my skill set -->
       <div class="skill__set">
-        <h2>My skill set</h2>
 
-        <br />
 
-        <h3>C#</h3>
-        <h3>Python</h3>
-        <h3>C++</h3>
-        <h3>JavaScript</h3>
-        <h3>C</h3>
-        <h3>HTML, CSS</h3>
-        <h3>Java</h3>
-        <h3>Dart</h3>
-        <h3>ASP.NET core</h3>
+        <div class="computational_skils">
+          <h2 class="title">Technical Skills</h2>
 
-        <br />
+          <div class="skillsets">
+            <div>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> C#</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Python</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> C++</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> JavaScript</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> C</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> HTML, CSS</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Java</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Dart</p>
 
-        <h3>MySQL Server</h3>
-        <h3>Firebase</h3>
-        <h3>Access</h3>
-        <h3>SQL</h3>
+            </div>
 
-        <br />
+            <div>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> ASP.NET core</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> MySQL Server</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Firebase</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Access</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> SQL</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Power BI</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Blender</p>
+              <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Matlab</p>
+            </div>
+          </div>
+        </div>
 
-        <h3>Power BI</h3>
-        <h3>Blender</h3>
-        <h3>Matlab</h3>
+        <div class="softskills">
+          <h2 class="title">Soft Skills</h2>
+          <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Strong problem-solving and analytical skills</p>
+          <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Excellent communication and teamwork abilities
+          </p>
+          <p><img src="/asseerts/tick_svg.svg" alt="certified tick"> Commitment to continuous learning and professional
+            development</p>
+        </div>
+
       </div>
-    </section>
+    </div>
 
-    <!-- This is the display for history -->
-    <section class="history" id="history">
-      <div class="history__info">
-        <div class="work__history">
-          <h2>Work History</h2>
-          <br />
+  </section>
 
-          <div>
+  <!-- This is the display for history -->
+  <section class="history" id="history">
+    <div class="history__info">
+      <div class="work__history">
+        <h2>Work History</h2>
+
+        <div class="exprience__category">
+
+          <div class="history__exprience">
             <h3>
               Software developer intern
             </h3>
-            <h4>Wits Innovation Center, University of Witwatersrand</h4>
-            <h4>01/012023 - present</h4>
+            <h4><img src="/asseerts/location_svg.svg" alt="" class="location__svg__class"> Wits Innovation Center,
+              University of
+              Witwatersrand</h4>
+            <h4><img src="/asseerts/calender_svg.svg" alt="" class="svg__class"> 01/012023 - 31/12/2023</h4>
           </div>
 
           <br />
 
-          <div>
+          <div class="history__exprience">
             <h3>
               Finance Officer
             </h3>
-            <h4>Bono foundation</h4>
-            <h4>01/01/2023 - present</h4>
+            <h4><img src="/asseerts/location_svg.svg" alt="" class="location__svg__class">Bono foundation ( NGO )</h4>
+            <h4><img src="/asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2023 - present</h4>
           </div>
 
           <br />
 
-          <div>
+          <div class="history__exprience">
             <h3>
               Tutor
             </h3>
-            <h4>University of Witwatersrand</h4>
-            <h4>01/01/2022 - 04/12/2022</h4>
-          </div>
-          
-        </div>
-
-        <div class="education__history">
-          <h2>Education History</h2>
-          <br />
-
-          <div>
-            <h3>
-              BSc - Compuer Science,Computer Applications and Information
-              systems
-            </h3>
-            <h4>University of Witwatersrand</h4>
-            <h4>2019 - 2022</h4>
+            <h4><img src="/asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand
+            </h4>
+            <h4><img src="/asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2022 - 04/12/2022</h4>
           </div>
 
-          <br />
-
-          <div>
-            <h3>NSC Certificate</h3>
-            <h4>Thinashaka Secondary School</h4>
-            <h4>2014 - 2018</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- This is the display for contact -->
-    <section class="contact" id="contact">
-      <div class="contact__info">
-        <h1>You can contact me here</h1>
-        <div class="contact">
-          <input type="text" placeholder="your email" />
-          <input type="text" placeholder="your name" />
-          <input type="text" placeholder="your company name if applicable" />
-          <input type="text" placeholder="your number" />
-
-          <input type="text" placeholder="content" />
-
-          <button type="submit">Send</button>
         </div>
 
-        <p>I will stay in contact</p>
       </div>
-    </section>
 
-    <!-- This is the display for game -->
-    <section class="game" id="game">
-      <div class="game__info">
-        <h1>SINGO TSHAVHALUFU</h1>
-        <p>Welcome to my game page</p>
+      <div class="education__history">
+        <h2>Education History</h2>
+        <br />
+
+        <div class="history__exprience">
+          <h3>
+            BSc - Compuer Science and Information
+            systems
+          </h3>
+          <h4><img src="/asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand</h4>
+          <h4><img src="/asseerts/calender_svg.svg" alt="" class="svg__class">2019 - 2022</h4>
+        </div>
+
+        <br />
+
+        <div class="history__exprience">
+          <h3>NSC Certificate</h3>
+          <h4><img src="/asseerts/location_svg.svg" alt="" class="location__svg__class">Thinashaka Secondary School</h4>
+          <h4><img src="/asseerts/calender_svg.svg" alt="" class="svg__class">2014 - 2018</h4>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="/javascript/screenlisterner.js"></script>
-  </body>
+  <script src="/javascript/screenlisterner.js"></script>
+</body>
+
 </html>
