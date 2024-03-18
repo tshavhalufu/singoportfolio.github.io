@@ -19,7 +19,7 @@ a {
   color: black;
 }
 
-.navbarDiv {
+.navbar {
   /* border: 5px solid red; */
   width: 100%;
   position: sticky;
@@ -30,17 +30,20 @@ a {
   /* transition: 0.3s; */
   z-index: 5;
   background-color: rgb(207, 219, 219);
+  display: flex;
+  justify-content: space-evenly;
   /* background-color: rgb(148, 184, 196);
     background: rgb(255, 255, 255);
     background: linear-gradient(to right bottom,rgba(255, 110, 110, 0),rgba(120, 7, 143, 0.2));
     backdrop-filter: blur(2rem);
     -webkit-backdrop-filter: blur(2rem); */
 }
-.navbarDiv.stickyHeader {
+
+.navbar.stickyHeader {
   background-color: blue;
 }
 
-.navbarDiv .navbar {
+nav {
   display: flex;
   padding: 0;
   margin: 0;
@@ -106,14 +109,14 @@ p {
   justify-content: center;
   align-items: center;
 }
-.image_view {
+.img {
   flex-basis: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.image_view img {
+.home img {
   height: 400px;
   width: 400px;
 

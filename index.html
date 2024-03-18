@@ -10,22 +10,17 @@
 </head>
 
 <body>
-  <header class="navbarDiv">
-    <nav class="navbar">
-      <div class="myName">
-        <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
-      </div>
-
-      <div class="linkList">
-        <ul class="linkListTitle">
-          <li><a href="#home" id="homeLink" class="active">Home</a></li>
-          <li><a href="#about" id="aboutLink">About</a></li>
-          <li><a href="#history" id="historyLink">History</a></li>
-        </ul>
-      </div>
+  <header class="navbar">
+    <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
+    <nav>
+      <ul class="linkListTitle">
+        <li><a href="#home" id="homeLink" class="active">Home</a></li>
+        <li><a href="#about" id="aboutLink">About</a></li>
+        <li><a href="#history" id="historyLink">History</a></li>
+      </ul>
     </nav>
 
-    <nav class="mobileNavbar">
+    <!-- <nav class="mobileNavbar">
       <div class="myName">
         <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
       </div>
@@ -45,15 +40,13 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
   </header>
 
   <!-- This is the display for home -->
   <section class="home" id="home">
-    <div class="image_view">
-      <img src="/asseerts/singo_tshavhalufu_pic.jpg" alt="Singo Tshalufu image" class="main_pic" loading="lazy">
-    </div>
-    <div class="welcome__info">
+    <img src="./asseerts/singo_tshavhalufu_pic.jpg" alt="Singo Tshalufu image" class="main_pic" loading="lazy">
+    <article class="welcome__info">
       <h1>Hello I am</h1>
       <h2 class="name">SINGO TSHAVHALUFU</h2>
       <p>
@@ -61,18 +54,18 @@
       </p>
       <div class="media_buttons">
 
-        <button class="download_cv" onclick="window.open('/asseerts/singo_tshavhalufu_resume.pdf')"
+        <button class="download_cv" onclick="window.open('./asseerts/singo_tshavhalufu_resume.pdf')"
           aria-label="download singo tshavhalufu cv">Download CV</button>
 
         <a href="https://linkedin.com/in/tshavhalufu-singo-154538179">
-          <img src="/asseerts/linkedin_svg.svg" alt="linkedin logo" class="social_media">
+          <img src="./asseerts/linkedin_svg.svg" alt="linkedin logo" class="social_media">
         </a>
 
         <a href="https://github.com/tshavhalufu?tab=repositories">
-          <img src="/asseerts/github_svg.svg" alt="github logo" class="social_media">
+          <img src="./asseerts/github_svg.svg" alt="github logo" class="social_media">
         </a>
       </div>
-    </div>
+    </article>
   </section>
 
   <!-- This is the display for about -->
