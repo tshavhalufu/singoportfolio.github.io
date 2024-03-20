@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-
+  <script src="javascript/screenlisterner.js"></script>
   <title>Singo Tshalufu Portfolio</title>
 </head>
 
@@ -19,195 +19,257 @@
         <li><a href="#history" id="historyLink">History</a></li>
       </ul>
     </nav>
+  </header>
 
-    <!-- <nav class="mobileNavbar">
-      <div class="myName">
-        <h1 class="navbarName"><a href="#">Singo Portfolio</a></h1>
+  <main>
+
+    <!-- This is the display for home -->
+    <section class="home" id="home">
+      <img src="./asseerts/singo_tshavhalufu_pic.jpg" alt="Singo Tshalufu image" class="main_pic" loading="lazy">
+      <article class="welcome__info">
+        <header>
+          <h1>Hello I am <br>
+
+            <!-- </h1><h2 class="name"> -->
+
+            <strong>SINGO TSHAVHALUFU</strong>
+          </h1>
+        </header>
+
+        <p>
+          Software Developer<br />
+        </p>
+        <div class="media_buttons">
+
+          <button class="download_cv" onclick="window.open('./asseerts/singo_tshavhalufu_resume.pdf')"
+            aria-label="download singo tshavhalufu cv">Download CV</button>
+
+          <a href="https://linkedin.com/in/tshavhalufu-singo-154538179" target="_blank">
+            <img src="./asseerts/linkedin_svg.svg" alt="linkedin logo" class="social_media">
+          </a>
+
+          <a href="https://github.com/tshavhalufu?tab=repositories" target="_blank">
+            <img src="./asseerts/github_svg.svg" alt="github logo" class="social_media">
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- This is the display for about -->
+    <section class="about" id="about">
+      <div class="about__info">
+        <!-- section to explain why I am in this career path -->
+        <article class="career__motivatio">
+          <header>
+            <h2>What motivated my career?</h2>
+          </header>
+
+          <p>
+            From an early age, my exposure to computers ignited a profound curiosity about their inner workings.
+          </p>
+          <p>
+            This interest grew while I was studying Computer Science at University of Witwatersrand,
+          </p>
+          <p> where I discovered a keen interest in the realms of software design and programming.</p>
+          <p>
+            Upon graduating, I eagerly embraced the chance to join the Wits Graduate Internship Programme,
+          </p>
+          <p>
+            a pivotal step towards further honing my skills and evolving into a seasoned software developer.
+          </p>
+          <p>
+            My enthusiasm lies in harnessing technology to tackle intricate challenges and bring forth efficient,
+            innovative solutions.
+          </p>
+          <p>
+            Besides working with code, I find joy in the rhythm of jogging and the creative process of composing music
+            in my free time.
+          </p>
+        </article>
       </div>
 
-      <div class="handburger_menu">
-        <div class="handburger__icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+      <!-- listing all my skill set -->
+      <div class="skills">
+        <h2 class="title">My skill set</h2>
+
+        <div class="skill__set">
+
+
+          <div class="computational_skils">
+            <h2 class="title">Technical Skills</h2>
+
+            <div class="skillsets">
+              <ul>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>C#</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Python</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>C++</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>JavaScript</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>C</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>HTML, CSS</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Java</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Dart</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>ASP.NET core</p>
+                </li>
+
+              </ul>
+
+              <ul>
+
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>MySQL Server</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Firebase</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Access</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>SQL</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Git</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Power BI</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Blender</p>
+                </li>
+                <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                  <p>Matlab</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="softskills">
+            <header>
+              <h2 class="title">Soft Skills</h2>
+            </header>
+
+            <ul>
+              <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                <p>Strong problem-solving and analytical skills</p>
+              </li>
+              <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                <p>Excellent communication and teamwork abilities</p>
+              </li>
+              <li><img src="asseerts/tick_svg.svg" alt="certified tick">
+                <p>Commitment to continuous learning and professional development</p>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- This is the display for history -->
+    <section class="history" id="history">
+      <div class="history__info">
+        <div class="work__history">
+          <header>
+            <h2>Work History</h2>
+          </header>
+
+
+          <div class="exprience__category">
+
+            <ul class="history__exprience">
+              <li>
+                <header>
+                  <h3>
+                    Software developer intern
+                  </h3>
+                </header>
+
+                <p><img src="asseerts/location_svg.svg" alt="" class="location__svg__class"> Wits Innovation Center,
+                  University of the Witwatersrand</p>
+                <p><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/012023 - 31/12/2023</p>
+              </li>
+
+              <li>
+                <header>
+                  <h3>
+                    Finance Officer
+                  </h3>
+                </header>
+                <p><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">Bono foundation ( NGO )
+                </p>
+                <p><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2023 - present</p>
+
+              </li>
+
+              <li>
+                <header>
+                  <h3>
+                    Tutor
+                  </h3>
+                </header>
+
+                <p><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand
+                </p>
+                <p><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2022 - 04/12/2022</p>
+              </li>
+            </ul>
+
+          </div>
+
         </div>
 
-        <div class="menu__list">
-          <ul class="linkListTitle__menu">
-            <li><a href="#home" id="homeLink" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#about" id="aboutLink" onclick="toggleMenu()">About</a></li>
-            <li><a href="#history" id="historyLink" onclick="toggleMenu()">History</a></li>
+        <div class="education__history">
+          <header>
+            <h2>Education History</h2>
+          </header>
+
+
+          <ul class="history__exprience">
+
+            <li>
+              <h3>
+                BSc - Compuer Science and Information
+                systems
+              </h3>
+              <p><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand
+              </p>
+              <p><img src="asseerts/calender_svg.svg" alt="" class="svg__class">2019 - 2022</p>
+            </li>
+            <li>
+              <header>
+                <h3>NSC Certificate</h3>
+              </header>
+              <p><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">Thinashaka Secondary
+                School
+              </p>
+              <p><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 2014 - 2018</p>
+            </li>
+
           </ul>
         </div>
       </div>
-    </nav> -->
-  </header>
-
-  <!-- This is the display for home -->
-  <section class="home" id="home">
-    <img src="./asseerts/singo_tshavhalufu_pic.jpg" alt="Singo Tshalufu image" class="main_pic" loading="lazy">
-    <article class="welcome__info">
-      <h1>Hello I am</h1>
-      <h2 class="name">SINGO TSHAVHALUFU</h2>
-      <p>
-        Software Developer<br />
-      </p>
-      <div class="media_buttons">
-
-        <button class="download_cv" onclick="window.open('./asseerts/singo_tshavhalufu_resume.pdf')"
-          aria-label="download singo tshavhalufu cv">Download CV</button>
-
-        <a href="https://linkedin.com/in/tshavhalufu-singo-154538179">
-          <img src="./asseerts/linkedin_svg.svg" alt="linkedin logo" class="social_media">
-        </a>
-
-        <a href="https://github.com/tshavhalufu?tab=repositories">
-          <img src="./asseerts/github_svg.svg" alt="github logo" class="social_media">
-        </a>
-      </div>
-    </article>
-  </section>
-
-  <!-- This is the display for about -->
-  <section class="about" id="about">
-    <div class="about__info">
-      <!-- section to explain why I am in this career path -->
-      <div class="career__motivatio">
-        <h2>What motivated my career?</h2>
-        <p>
-          From an early age, my exposure to computers ignited a profound curiosity about their inner workings.<br>
-          This interest grew while I was studying Computer Science at University of Witwatersrand,<br> where I
-          discovered a keen interest in the realms of software design and programming.<br>
-          Upon graduating, I eagerly embraced the chance to join the Wits Graduate Internship Programme,<br>
-          a pivotal step towards further honing my skills and evolving into a seasoned software developer.<br>
-          My enthusiasm lies in harnessing technology to tackle intricate challenges and bring forth efficient,
-          innovative solutions.<br>
-          Besides working with code, I find joy in the rhythm of jogging and the creative process of composing music in
-          my free time.
-        </p>
-      </div>
-    </div>
-
-    <!-- listing all my skill set -->
-    <div class="skills">
-      <h2 class="title">My skill set</h2>
-
-      <div class="skill__set">
-
-
-        <div class="computational_skils">
-          <h2 class="title">Technical Skills</h2>
-
-          <div class="skillsets">
-            <div>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> C#</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Python</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> C++</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> JavaScript</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> C</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> HTML, CSS</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Java</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Dart</p>
-
-            </div>
-
-            <div>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> ASP.NET core</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> MySQL Server</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Firebase</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Access</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> SQL</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Power BI</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Blender</p>
-              <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Matlab</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="softskills">
-          <h2 class="title">Soft Skills</h2>
-          <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Strong problem-solving and analytical skills</p>
-          <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Excellent communication and teamwork abilities
-          </p>
-          <p><img src="asseerts/tick_svg.svg" alt="certified tick"> Commitment to continuous learning and professional
-            development</p>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- This is the display for history -->
-  <section class="history" id="history">
-    <div class="history__info">
-      <div class="work__history">
-        <h2>Work History</h2>
-
-        <div class="exprience__category">
-
-          <div class="history__exprience">
-            <h3>
-              Software developer intern
-            </h3>
-            <h4><img src="asseerts/location_svg.svg" alt="" class="location__svg__class"> Wits Innovation Center,
-              University of
-              Witwatersrand</h4>
-            <h4><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/012023 - 31/12/2023</h4>
-          </div>
-
-          <br />
-
-          <div class="history__exprience">
-            <h3>
-              Finance Officer
-            </h3>
-            <h4><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">Bono foundation ( NGO )</h4>
-            <h4><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2023 - present</h4>
-          </div>
-
-          <br />
-
-          <div class="history__exprience">
-            <h3>
-              Tutor
-            </h3>
-            <h4><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand
-            </h4>
-            <h4><img src="asseerts/calender_svg.svg" alt="" class="svg__class"> 01/01/2022 - 04/12/2022</h4>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="education__history">
-        <h2>Education History</h2>
-        <br />
-
-        <div class="history__exprience">
-          <h3>
-            BSc - Compuer Science and Information
-            systems
-          </h3>
-          <h4><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">University of Witwatersrand
-          </h4>
-          <h4><img src="asseerts/calender_svg.svg" alt="" class="svg__class">2019 - 2022</h4>
-        </div>
-
-        <br />
-
-        <div class="history__exprience">
-          <h3>NSC Certificate</h3>
-          <h4><img src="asseerts/location_svg.svg" alt="" class="location__svg__class">Thinashaka Secondary School
-          </h4>
-          <h4><img src="asseerts/calender_svg.svg" alt="" class="svg__class">2014 - 2018</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="javascript/screenlisterner.js"></script>
+    </section>
+  </main>
+  <footer> <i>created by Singo Tshavhalufu in 2024</i></footer>
 </body>
 
 </html>
