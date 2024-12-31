@@ -7,21 +7,25 @@
   scrollbar-width: none;
   font-family: "Roboto", sans-serif;
 }
-body {
-  padding: 0;
+body,
+html {
   margin: 0;
+  padding: 0;
   width: 100%;
-  /* background-color: powderblue; */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   background-color: "#fffdfd";
 }
+
 a {
   text-decoration: none;
   color: black;
 }
-
+h3 {
+  font-size: 1.3rem;
+}
 .navbar {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   transition: 0.3s;
   z-index: 5;
@@ -40,6 +44,7 @@ nav {
   padding: 0;
   margin: 0;
 }
+
 .linkListTitle {
   margin: 0;
   padding: 0;
@@ -73,10 +78,39 @@ p {
 }
 
 .home {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  /* 
+  background-color: yellow; */
+  /* gap: 2rem; */
+  /* padding: 2rem; */
+}
+
+.home .image_view {
+  flex-basis: 5;
+  /* background-color: pink; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home img {
+  /* height: 400px; */
+  width: 60%;
+  border-radius: 40rem;
+}
+.into__header {
+  line-height: 3rem;
+  font-size: 1.6rem;
+}
+.into__header strong span {
+  color: #007bff; /* Example: blue color */
+  /* font-weight: bold; /* Optional: Make the text bold */
+  /* font-size: 2.2rem; Increase font size  */
 }
 .img {
   flex-basis: 0.5;
@@ -85,22 +119,19 @@ p {
   align-items: center;
 }
 
-.home img {
-  height: 400px;
-  width: 400px;
-
-  border-radius: 50%;
-}
-
 .home article {
-  width: 35rem;
+  flex-basis: 5;
+  text-align: center;
+  width: 100%;
 }
-.welcome__info {
+
+/* .welcome__info {
   flex-basis: 0.5;
   padding-left: 2rem;
   text-align: center;
-}
+} */
 .welcome__info h1 {
+  font-style: italic;
   font-weight: 500;
 }
 .welcome__info h2 {
@@ -145,12 +176,17 @@ p {
   margin-bottom: 1rem;
 }
 
+.career__motivatio p {
+  font-style: oblique;
+}
 .about .skill__set .computational_skils {
   align-items: center;
   justify-content: center;
   justify-items: center;
   flex-basis: 0.5;
   width: 100%;
+
+  /* border-right: 2px solid rgb(207, 219, 219); */
 }
 
 .skillsets {
@@ -158,6 +194,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   text-align: start;
+  width: 100%;
   border-right: 2px solid rgb(207, 219, 219);
 }
 
@@ -165,17 +202,34 @@ p {
 .softskills ul {
   list-style: none;
 }
+
+.skillsets ul,
+.softskills ul {
+  width: 100%;
+  padding-left: 1rem;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
 .skillsets ul li,
 .softskills ul li {
   display: flex;
+  padding-bottom: 0.5rem;
+}
+
+.skillsets ul li p,
+.softskills ul li p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.02rem;
 }
 .about .skill__set .softskills {
   text-align: center;
   flex-basis: 0.5;
   width: 100%;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
-
+.about h2 {
+  text-decoration: underline;
+}
 .about .skill__set .softskills ul {
   text-align: start;
 }
@@ -193,11 +247,20 @@ p {
   margin-right: 15%;
   margin-bottom: 10%;
 }
+.history__info h3 {
+  text-align: center;
+}
 .work__history,
 .education__history {
   width: 100%;
   flex-basis: 0.5;
-  text-indent: 25%;
+  text-indent: 10%;
+  /* background-color: red;
+  gap: 2rem; */
+}
+.work__history p,
+.education__history p {
+  font-size: 0.9rem;
 }
 .exprience__category {
   border-right: 2px solid rgb(207, 219, 219);
@@ -206,31 +269,33 @@ p {
   list-style: none;
   margin-top: 2rem;
 }
-.history__exprience h3,
 .history__exprience h4 {
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+.history__exprience p {
+  color: rgb(53, 19, 19);
 }
 .history__exprience img {
-  margin-right: 1.1rem;
+  margin-right: 1rem;
 }
 
 @keyframes location_animation {
   50% {
-    transform: scale(1.5) rotate(15deg);
+    transform: scale(1.2) rotate(15deg);
   }
 }
 @keyframes calender_animation {
   50% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
 .location__svg__class {
   transition: 0.3s;
-  animation: location_animation 4s infinite;
+  animation: location_animation 6s infinite;
 }
 .svg__class {
-  animation: calender_animation 4s infinite;
+  animation: calender_animation 6s infinite;
 }
 
 @media screen and (max-width: 1200px) {
@@ -254,14 +319,64 @@ p {
 }
 
 @media screen and (max-width: 720px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .navbar {
+    display: none;
+  }
   nav {
     display: none;
   }
-  .about,
+  /* .home {
+    justify-content: space-evenly;
+  } */
+
+  .home {
+    display: flex;
+    gap: 0;
+  }
+  .image_view {
+    /* margin-bottom: 1rem; */
+    margin: 0;
+  }
+  .home img {
+    /* height: 400px; */
+    width: 100%;
+    border-radius: 0 0 10% 10%;
+  }
+  .home .welcome__info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-basis: 5;
+    text-align: center;
+    /* justify-content: space-evenly; */
+  }
+  .skillsets ul,
+  .softskills ul {
+    margin-left: 0;
+    padding: 0;
+    align-items: center;
+    /* background-color: yellowgreen; */
+    /* width: 100%; */
+    padding-left: 1rem;
+  }
+  .history__info {
+    gap: 2rem;
+  }
+  /* .about,
   .history {
     font-size: small;
     font-weight: 300;
-  }
+  } */
+  /* footer {
+    width: 100vw;
+
+    display: block;
+  } */
   .work__history,
   .education__history {
     width: 100%;
